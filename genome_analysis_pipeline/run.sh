@@ -44,4 +44,3 @@ ${JAVA} -jar ${GATK} GenotypeGVCFs -V ${gvcf} -O ${vcf} -R ${REFERENCE}
 ${JAVA} -jar -Xmx4000m ${SNPEFF} -v hg38 ${vcf} > ${annotated_vcf}
 
 echo "##END: `date`" >> ${sample}.log.txt
-
